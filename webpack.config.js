@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'none',
@@ -27,13 +28,18 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin(),
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'Typing Game - JooYoung Lee',
+      template: './src/index.html',
+    }),
     new webpack.SourceMapDevToolPlugin({}),
     new webpack.HotModuleReplacementPlugin({}),
   ],
   devServer: {
     hot: true,
     port: 3000,
+    open: true,
   },
   devtool: false,
 };

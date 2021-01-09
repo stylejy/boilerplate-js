@@ -1,8 +1,5 @@
+require('./Router');
+
 const App = () => {
-  console.log('asdfgdsfg');
+  console.log('App');
 };
-
-const a = 'ads';
-console.log(a);
-
-document.body.appendChild(document.createElement('div'));
