@@ -1,0 +1,27 @@
+{
+  "name": "typing-game",
+  "version": "1.0.0",
+  "private": true,
+  "author": "JooYoung Lee",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^7.0.0",
+    "eslint": "^7.17.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "html-webpack-plugin": "^4.5.1",
+    "prettier": "^2.2.1",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.1"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
